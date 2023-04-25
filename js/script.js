@@ -1,9 +1,26 @@
 import ehUmCPF from "./valida-cpf.js";
 import ehMaiorDeIdade from "./valida-idade.js";
 
-const campoDoFormulario = document.querySelectorAll("[required]");
+const camposDoFormulario = document.querySelectorAll("[required]");
+const formulario = document.querySelector("[data-formulario]");
 
-campoDoFormulario.forEach((campo) => {
+formulario.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const listaRespostas = {
+    "nome": e.target.elements["nome"].value,
+    "email": e.target.elements["email"].value,
+    "rg": e.target.elements["rg"].value,
+    "cpf": e.target.elements["cpf"].value,
+    "aniversario": e.target.elements["aniversario"].value,
+  };
+
+  localStorage.setItem("cadastro", JSON.stringify(listaRespostas));
+
+  window.location.href = "./abrir-conta-form-2.html";
+});
+
+camposDoFormulario.forEach((campo) => {
   campo.addEventListener("blur", () => verificaCampo(campo));
   campo.addEventListener("invalid", (evento) => evento.preventDefault());
 });
@@ -11,7 +28,7 @@ campoDoFormulario.forEach((campo) => {
 const tiposDeErro = [
   "valueMissing",
   "typeMismatch",
-  "patternMIsmatch",
+  "patternMismatch",
   "tooShort",
   "customError",
 ];
@@ -25,7 +42,7 @@ const mensagens = {
   email: {
     valueMissing: "O campo de e-mail não pode estar vazio.",
     typeMismatch: "Por favor, preencha um email válido.",
-    tooShort: "Por favor, preencha um e-mail válido.",
+    tooShort: "Por favor, preencha um email válido.",
   },
   rg: {
     valueMissing: "O campo de RG não pode estar vazio.",

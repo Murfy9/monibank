@@ -1,9 +1,9 @@
-<h1 align="center">
-📚 MoniBank<br/>
-Curso na Alura - Javascript: validando formulários
-<p>Formulário de criação de contas para o banco virtual MoniBank.</p>
-</h1>
+<div align="center">
+<h1>📚 MoniBank<br/>
+Curso na Alura - Javascript: validando formulários</h1>
 
+<h2>Formulário de criação de contas para o banco virtual MoniBank.</h2>
+</div>
 
 ## 🔨 Tecnologias utilizadas durante o curso
 
@@ -22,7 +22,7 @@ Curso na Alura - Javascript: validando formulários
  - async / await
  - data-attributes
 
-## 📖 tipos de errro
+## 📖 tipos de erro
  
 - o valueMissing ocorre quando deixamos o campo vazio.
 

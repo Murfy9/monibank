@@ -1,13 +1,20 @@
-<p align="center"> <img src="https://imgur.com/mIBmcEL.png" alt="Javascript: validando formulários"> </p>
+<h1 align="center">
+📚 MoniBank<br/>
+Curso na Alura - Javascript: validando formulários
+</h1>
 
-<hr>
+<div align="center">
 
-<p align="center"> <img src="https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png" alt="Logo da Alura"> </p>
-<p align="center">Formulário de criação de contas para o banco virtual MoniBank.</p>
+## Formulário de criação de contas para o banco virtual MoniBank.
 
-## Tecnologias utilizadas durante o curso
-* JavaScript
+## 🔨 Tecnologias utilizadas durante o curso
 
-## Tecnologias utilizadas no projeto
-* HTML
-* CSS
+ 📚 Javascript
+
+## ✔️ Tecnologias utilizadas no projeto
+
+ 📚 HTML
+ 
+ 📚 CSS
+
+</div>

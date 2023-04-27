@@ -76,7 +76,6 @@ function verificaCampo(campo) {
   tiposDeErro.forEach((erro) => {
     if (campo.validity[erro]) {
       mensagem = mensagens[campo.name][erro];
-      console.log(mensagem);
     }
   });
   const mensagemErro = campo.parentNode.querySelector(".mensagem-erro");
